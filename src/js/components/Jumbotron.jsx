@@ -1,7 +1,6 @@
 import React from "react";
 import '../../styles/jumbotron.css';
 
-//create your first component
 const Jumbotron = () => {
   return (
     <div className="card jumbotron bg-light pb-4">
