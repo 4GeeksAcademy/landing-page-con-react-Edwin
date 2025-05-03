@@ -4,7 +4,7 @@ import '../../styles/jumbotron.css';
 //create your first component
 const Jumbotron = () => {
   return (
-    <div className="card custom-card">
+    <div className="card jumbotron">
       <div className="card-body">
         <h5 className="card-title">Card title</h5>
         <p className="card-text">

@@ -5,7 +5,7 @@ import "../../styles/navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
-      <div className="container-fluid">
+      <div className="container">
         <span className="navbar-brand">
           Landing page
         </span>
