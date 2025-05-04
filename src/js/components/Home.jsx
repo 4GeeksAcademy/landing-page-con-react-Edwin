@@ -47,7 +47,7 @@ const Home = () => {
         </div>
         <div className="row">
           {cardsData.map((card, index) => (
-            <div className="p-2 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-around" key={index}>
+            <div className="p-2 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-between" key={index}>
               <Card
                 title={card.title}
                 text={card.text}
