@@ -1,25 +1,28 @@
 import React from "react";
-import '../../styles/card.css';
+import "../../styles/card.css";
+import PropTypes from "prop-types";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-const Card = () => {
+const Card = (props) => {
   return (
-    <div className="card custom-card">
-        <img src={rigoImage} />
+    <div className="card">
+      <img src={props.image} alt="Card image" className="card-img-top" />
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" className="btn btn-primary">
-          Go somewhere
+        <h5 className="card-title">{props.title}</h5>
+        <p className="card-text">{props.text}</p>
+        <a href={props.link} className="btn btn-primary" target="_blank">
+          {props.buttonText}
         </a>
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  title: PropTypes.string,
+  text: PropTypes.string,
+  image: PropTypes.string,
+  link: PropTypes.string,
+  buttonText: PropTypes.string,
 };
 
 export default Card;
