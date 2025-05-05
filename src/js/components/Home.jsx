@@ -45,9 +45,9 @@ const Home = () => {
             <Jumbotron />
           </div>
         </div>
-        <div className="row">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
           {cardsData.map((card, index) => (
-            <div className="p-2 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-between" key={index}>
+            <div className="col" key={index}>
               <Card
                 title={card.title}
                 text={card.text}

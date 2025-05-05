@@ -1,5 +1,8 @@
-.card {
+.custom-card {
   min-width: 13rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-img-top {
